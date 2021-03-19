@@ -23,4 +23,4 @@ rm -rf shapeless/ && \
 git clone https://github.com/milessabin/shapeless.git && \
 cd shapeless && \
 git checkout $SHAPELESS_BRANCH && \
-sbt ++$DOTTY_VERSION $TESTS
+sbt ++$DOTTY_VERSION! $TESTS
