@@ -11,9 +11,9 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        shapelessbranch: ["shapeless-3"]
+        shapelessbranch: ["shapeless-3-staging"]
     env:
-      SHAPELESS_BRANCH: "shapeless-3"
+      SHAPELESS_BRANCH: "shapeless-3-staging"
     steps:
       - uses: actions/checkout@v2
       - uses: olafurpg/setup-scala@v10

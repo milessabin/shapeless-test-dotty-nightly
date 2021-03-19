@@ -9,7 +9,7 @@ echo "Dotty version: $DOTTY_VERSION"
 echo "shapeless branch: $SHAPELESS_BRANCH"
 
 case $SHAPELESS_BRANCH in
-  shapeless-3)
+  shapeless-3-staging)
     TESTS="test"
     ;;
   *)
