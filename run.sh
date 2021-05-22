@@ -9,7 +9,7 @@ echo "Dotty version: $DOTTY_VERSION"
 echo "shapeless branch: $SHAPELESS_BRANCH"
 
 case $SHAPELESS_BRANCH in
-  shapeless-3)
+  main)
     TESTS="test"
     ;;
   *)
@@ -20,7 +20,7 @@ esac
 echo "Tests:" $TESTS
 
 rm -rf shapeless/ && \
-git clone https://github.com/milessabin/shapeless.git && \
-cd shapeless && \
+git clone https://github.com/typelevel/shapeless-3.git && \
+cd shapeless-3 && \
 git checkout $SHAPELESS_BRANCH && \
 sbt ++$DOTTY_VERSION! $TESTS
